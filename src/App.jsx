@@ -272,7 +272,7 @@ export default function Page() {
     if (yesPressed && noCount < 4 && !popupShown) {
       Swal.fire({
         title:
-          "I love you sooo Much!!!❤️, You’ve stolen my heart completely!!! 🥰💖 But itni pyaari ladki aur itni jaldi haan? Thoda aur nakhre karke mujhe tarpaao na! 🥰✨",
+          "I love you sooo Much!!!❤️, Okay… I did NOT see that coming 😮💖You just shocked me in the best way possible!✨",
         showClass: {
           popup: `
             animate__animated
@@ -391,7 +391,7 @@ export default function Page() {
               alt="Love Animation"
             />
             <h1 className="my-4 text-4xl text-center md:text-6xl">
-              Will you be my Valentine?
+              Sonaa, Will you be my Valentine?
             </h1>
             <div className="flex flex-wrap items-center justify-center gap-2">
               <button
