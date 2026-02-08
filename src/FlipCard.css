@@ -1,0 +1,35 @@
+.train-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #0f172a;
+  padding: 20px 0;
+}
+
+.train-track {
+  display: flex;
+  width: fit-content;
+  animation: moveTrain 25s linear infinite;
+}
+
+.train-track img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.train-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes moveTrain {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

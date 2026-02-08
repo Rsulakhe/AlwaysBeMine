@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
 import Swal from "sweetalert2";
 import { BsVolumeUpFill, BsVolumeMuteFill } from "react-icons/bs";
-
+import ImageTrain from "./ImageTrain.jsx";
 import MouseStealing from "./MouseStealer.jsx";
 import lovesvg from "./assets/All You Need Is Love SVG Cut File.svg";
 import Lovegif from "./assets/GifData/main_temp.gif";
@@ -44,6 +44,8 @@ import yesmusic2 from "./assets/AudioTracks/Love_EDPerfect.mp3";
 import yesmusic3 from "./assets/AudioTracks/Love_Nadaaniyan.mp3";
 import yesmusic4 from "./assets/AudioTracks/Love_JoTumMereHo.mp3";
 //! no - Music Importing
+
+import nomusic from "./assets/AudioTracks/saanso-ke-maala-pai_Pritam_ka_kuch.mp3";
 import nomusic1 from "./assets/AudioTracks/Rejection_WeDontTalkAnyMore.mp3";
 import nomusic2 from "./assets/AudioTracks/Rejection_LoseYouToLoveMe.mp3";
 import nomusic3 from "./assets/AudioTracks/Reject_withoutMe.mp3";
@@ -77,7 +79,7 @@ const NoGifs = [
   nogif8,
 ];
 const YesMusic = [yesmusic1, yesmusic3, yesmusic4, yesmusic2];
-const NoMusic = [nomusic1, nomusic2, nomusic3, nomusic4, nomusic5];
+const NoMusic = [nomusic, nomusic1, nomusic2, nomusic3, nomusic4, nomusic5];
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -376,6 +378,7 @@ export default function Page() {
               You’re the love of my life.{" "}
             </div>
             <WordMareque />
+            <ImageTrain />
           </>
         ) : (
           <>
